@@ -21,7 +21,7 @@ export function InputField({ name, control, label, ...inputProps }: InputFieldPr
   return (
     <TextField
       fullWidth
-      size="small"
+      //size="small"
       margin="normal"
       value={value}
       onChange={onChange}
