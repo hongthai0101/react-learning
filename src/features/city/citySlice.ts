@@ -49,6 +49,8 @@ export const selectCityOptions = createSelector(selectCityList, (cityList) =>
   }))
 );
 
+export const cityLoading = (state: RootState) => state.city.loading;
+
 // Reducer
 const cityReducer = citySlice.reducer;
 export default cityReducer;

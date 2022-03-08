@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Dashboard, PeopleAlt } from '@material-ui/icons';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,6 +46,15 @@ export function Sidebar() {
               <PeopleAlt />
             </ListItemIcon>
             <ListItemText primary="Students" />
+          </ListItem>
+        </NavLink>
+
+        <NavLink to="/admin/cities" className={classes.link}>
+          <ListItem button>
+            <ListItemIcon>
+              <AccountBalanceIcon />
+            </ListItemIcon>
+            <ListItemText primary="City" />
           </ListItem>
         </NavLink>
       </List>
